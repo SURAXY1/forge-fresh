@@ -397,8 +397,11 @@ function pullNode(repo: Repo, pull: Pull): Record<string, (field: FieldNode, ctx
           if (baseFlat.get(path)?.oid === headFlat.get(path)?.oid) paths.delete(path);
         }
       }
-      const nodes = [...paths].sort().map((path) => select('PullRequestFile', { path: () => path }, field.selection, ctx));
-      return select('PullRequestFileConnection', { nodes: () => nodes }, field.selection, ctx);
+      const sorted = [...paths].sort();
+      return select('PullRequestFileConnection', {
+        nodes: (sub) => sorted.map((path) => select('PullRequestFile', { path: () => path }, sub.selection, ctx)),
+        totalCount: () => sorted.length,
+      }, field.selection, ctx);
     },
   };
 }
