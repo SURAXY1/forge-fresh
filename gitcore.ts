@@ -238,7 +238,9 @@ function packEntryHeader(type: GitType, size: number): Buffer {
 }
 
 function packedOf(record: ObjectRecord): Buffer {
-  if (!record.packed) record.packed = deflateSync(record.data);
+  // Level 1: pack recipients inflate either way; the build is on the clone
+  // hot path, so trade a few percent of size for a much cheaper deflate.
+  if (!record.packed) record.packed = deflateSync(record.data, { level: 1 });
   return record.packed;
 }
 
