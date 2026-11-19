@@ -1,3 +1,7 @@
+[![make.fun · github-core-clone-01](https://make.fun/badge/github-core-clone-01.svg)](https://make.fun/bounty/github-core-clone-01?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
+[![rank](https://make.fun/badge/github-core-clone-01/SURAXY1/forge-fresh/rank.svg)](https://make.fun/bounty/github-core-clone-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
+[![reward](https://make.fun/badge/github-core-clone-01/SURAXY1/forge-fresh/reward.svg)](https://make.fun/bounty/github-core-clone-01?utm_source=github&utm_medium=readme&utm_campaign=github-core-clone-01)
+
 [![Built for make.fun](https://make.fun/api/badges/github-core-clone-01/built-for-makefun.svg?repo=SURAXY1/forge-fresh)](https://make.fun/bounty/github-core-clone-01) [![Competition](https://make.fun/api/badges/github-core-clone-01/competition.svg?repo=SURAXY1/forge-fresh)](https://make.fun/bounty/github-core-clone-01) [![Earn on make.fun](https://make.fun/api/badges/github-core-clone-01/earn.svg?repo=SURAXY1/forge-fresh)](https://make.fun/bounty/github-core-clone-01)
 
 # forge-fresh
